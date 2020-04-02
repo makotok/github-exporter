@@ -47,5 +47,5 @@ compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
 // Mainクラスの指定
-// mainClassName = 'com.github.makotok.fractal.jfx.Main'
+mainClassName = 'com.github.makotok.github.exporter.Main'
 

@@ -11,7 +11,7 @@ public class MainTest {
 
     @Test
     public void testMain() {
-        Main.main(new String[] { "-repo", "makotok/Hanappe", "-oauth", System.getenv("GITHUB_OAUTH") });
+        Main.main(new String[] { "-repo", "makotok/Hanappe", "-oauth", System.getenv("GITHUB_TOKEN") });
     }
 
 }
