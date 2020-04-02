@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    // lombok
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    // implementation
+    implementation 'args4j:args4j:2.33'
+    implementation 'org.apache.poi:poi:4.1.2'
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    implementation 'com.sun.xml.bind:jaxb-core:2.3.0.1'
+    implementation 'com.sun.xml.bind:jaxb-impl:2.3.2'
+    implementation 'org.kohsuke:github-api:1.108'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.7'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.7'
+
+    // testImplementation
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.15.0'
+}
+
+// デフォルトタスクの指定
+defaultTasks 'clean', 'build'
+
+// グループID、バージョン指定
+group = 'com.github.makotok.github.exporter'
+version = '1.0.0-SNAPSHOT'
+
+// Javaバージョンの指定
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+// 文字コードの指定
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+// Mainクラスの指定
+// mainClassName = 'com.github.makotok.fractal.jfx.Main'
+
