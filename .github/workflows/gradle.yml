@@ -22,6 +22,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload build artifacts
+      if: always()
       uses: actions/upload-artifact@v1
       with:
         name: build-artifacts
