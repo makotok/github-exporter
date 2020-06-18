@@ -38,8 +38,8 @@ public class Main {
         try {
             // コマンドライン引数を解析
             var options = new ExportOptions();
-            var perser = new CmdLineParser(options);
-            perser.parseArgument(args);
+            var parser = new CmdLineParser(options);
+            parser.parseArgument(args);
 
             // GitHubと認証
             var github = new GitHubBuilder()

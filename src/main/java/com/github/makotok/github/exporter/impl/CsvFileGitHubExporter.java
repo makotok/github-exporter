@@ -78,7 +78,7 @@ public class CsvFileGitHubExporter implements GitHubExporter {
     /**
      * Issuesをシートに出力します。
      *
-     * @param workbook ワークブック
+     * @param writer Writer
      * @param githubRepo GitHubリポジトリ
      * @param options 出力オプション
      * @throws IOException
